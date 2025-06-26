@@ -1,0 +1,76 @@
+services:
+  kartoshkaevent.api:
+    image: ${DOCKER_REGISTRY-}kartoshkaeventapi
+    env_file: ".env"
+    container_name: kartoshka.webapi
+    networks:
+        - main
+    ports:
+        - "${KARTOSHKA_EXT_HTTP_PORT:-5555}:${KARTOSHKA_INT_HTTP_PORT:-8080}"
+    volumes:
+        - webapi:/kartoshka/api
+    build:
+      context: .
+      dockerfile: KartoshkaEvent.Api/Dockerfile
+    depends_on:
+    - kartoshka.database
+    - kartoshka.redis
+
+  kartoshka.database:
+    image: postgres
+    container_name: kartoshka.db
+    ports:
+        - "${POSTGRES_PORT:-5432}:${POSTGRES_PORT:-5432}"
+    volumes:
+        - db:/kartoshka/db
+    networks:
+        - main
+    environment:
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        POSTGRES_USER: ${POSTGRES_USER}
+        POSTGRES_DB: ${POSTGRES_DB}
+
+  kartoshka.redis:
+    image: redis:latest
+    container_name: kartoshka.redis
+    ports:
+      - "${REDIS_PORT:-6379}:${REDIS_PORT:-6379}"
+    volumes:
+      - redis:/kartoshka/redis
+    networks:
+      - main
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_USER=${REDIS_USER}
+      - REDIS_USER_PASSWORD=${REDIS_USER_PASSWORD}
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "$REDIS_PASSWORD", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: always
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+        PGADMIN_DEFAULT_EMAIL: petruho@admin.com
+        PGADMIN_DEFAULT_PASSWORD: admin
+        PGADMIN_LISTEN_PORT: 80
+    ports:
+    - "15432:80"
+    volumes:
+    - pgAdmin:/kartoshka/pgadmin
+    networks:
+    - main
+    depends_on:
+    - kartoshka.database
+
+networks:
+  main: 
+    driver: bridge
+
+volumes:
+  webapi:
+  db:
+  redis:
+  pgAdmin:

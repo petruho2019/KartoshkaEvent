@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.Api", "KartoshkaEvent.Api.csproj", "{657D56AD-9B8E-40A6-BAB1-1AE21B85B470}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{21510D97-A63F-4F9A-8F6F-46B7A7EDC393}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{12802144-8214-446D-9E4F-5AD0C9254A3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.Domain", "..\KartoshkaEvent.Domain\KartoshkaEvent.Domain.csproj", "{0ADA07F2-FEB3-4B70-8EE8-A588339C1946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.Domain.Common", "..\KartoshkaEvent.Domain.Common\KartoshkaEvent.Domain.Common.csproj", "{507A3548-E560-4DC1-85DA-AA195FAFC778}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{27AC5A48-EE2A-4B4E-894C-556ED4769D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.Application", "..\KartoshkaEvent.Appication\KartoshkaEvent.Application.csproj", "{36677DCC-3C28-4360-97AA-B004065F30A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.DataAccess", "..\KartoshkaEvent.DataAccess\KartoshkaEvent.DataAccess.csproj", "{349FD217-2934-4813-B2E5-F8F5589A4CD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{26EF6005-ADBA-4962-8D6C-7437F9B9C031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.Application.Contracts", "..\KartoshkaEvent.Appication.Contracts\KartoshkaEvent.Application.Contracts.csproj", "{84067B5C-833B-426D-987C-F713C550E435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.CacheService", "..\KartoshkaEvent.CacheService\KartoshkaEvent.CacheService.csproj", "{0C735905-7615-4137-BEB4-A474569EF2EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.JwtProvider", "..\KartoshkaEvent.JwtProvider\KartoshkaEvent.JwtProvider.csproj", "{09589ED0-1B70-42D7-8BD6-27AA4AF56654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.Application.Common", "..\KartoshkaEvent.Application.Common\KartoshkaEvent.Application.Common.csproj", "{0D8C3D4D-D0A9-4CD6-A97A-1E4D11198D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartoshkaEvent.MailService", "..\KartoshkaEvent.MailService\KartoshkaEvent.MailService.csproj", "{BDC8D3C3-1EAA-4416-BE9A-A9384916BD5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{657D56AD-9B8E-40A6-BAB1-1AE21B85B470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657D56AD-9B8E-40A6-BAB1-1AE21B85B470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657D56AD-9B8E-40A6-BAB1-1AE21B85B470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657D56AD-9B8E-40A6-BAB1-1AE21B85B470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADA07F2-FEB3-4B70-8EE8-A588339C1946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADA07F2-FEB3-4B70-8EE8-A588339C1946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADA07F2-FEB3-4B70-8EE8-A588339C1946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADA07F2-FEB3-4B70-8EE8-A588339C1946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507A3548-E560-4DC1-85DA-AA195FAFC778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507A3548-E560-4DC1-85DA-AA195FAFC778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507A3548-E560-4DC1-85DA-AA195FAFC778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507A3548-E560-4DC1-85DA-AA195FAFC778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36677DCC-3C28-4360-97AA-B004065F30A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36677DCC-3C28-4360-97AA-B004065F30A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36677DCC-3C28-4360-97AA-B004065F30A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36677DCC-3C28-4360-97AA-B004065F30A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349FD217-2934-4813-B2E5-F8F5589A4CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349FD217-2934-4813-B2E5-F8F5589A4CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349FD217-2934-4813-B2E5-F8F5589A4CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349FD217-2934-4813-B2E5-F8F5589A4CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84067B5C-833B-426D-987C-F713C550E435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84067B5C-833B-426D-987C-F713C550E435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84067B5C-833B-426D-987C-F713C550E435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84067B5C-833B-426D-987C-F713C550E435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C735905-7615-4137-BEB4-A474569EF2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C735905-7615-4137-BEB4-A474569EF2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C735905-7615-4137-BEB4-A474569EF2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C735905-7615-4137-BEB4-A474569EF2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09589ED0-1B70-42D7-8BD6-27AA4AF56654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09589ED0-1B70-42D7-8BD6-27AA4AF56654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09589ED0-1B70-42D7-8BD6-27AA4AF56654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09589ED0-1B70-42D7-8BD6-27AA4AF56654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8C3D4D-D0A9-4CD6-A97A-1E4D11198D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8C3D4D-D0A9-4CD6-A97A-1E4D11198D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8C3D4D-D0A9-4CD6-A97A-1E4D11198D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8C3D4D-D0A9-4CD6-A97A-1E4D11198D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC8D3C3-1EAA-4416-BE9A-A9384916BD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC8D3C3-1EAA-4416-BE9A-A9384916BD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC8D3C3-1EAA-4416-BE9A-A9384916BD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC8D3C3-1EAA-4416-BE9A-A9384916BD5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{657D56AD-9B8E-40A6-BAB1-1AE21B85B470} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{0ADA07F2-FEB3-4B70-8EE8-A588339C1946} = {27AC5A48-EE2A-4B4E-894C-556ED4769D4E}
+		{507A3548-E560-4DC1-85DA-AA195FAFC778} = {27AC5A48-EE2A-4B4E-894C-556ED4769D4E}
+		{27AC5A48-EE2A-4B4E-894C-556ED4769D4E} = {21510D97-A63F-4F9A-8F6F-46B7A7EDC393}
+		{36677DCC-3C28-4360-97AA-B004065F30A3} = {26EF6005-ADBA-4962-8D6C-7437F9B9C031}
+		{349FD217-2934-4813-B2E5-F8F5589A4CD3} = {12802144-8214-446D-9E4F-5AD0C9254A3F}
+		{26EF6005-ADBA-4962-8D6C-7437F9B9C031} = {21510D97-A63F-4F9A-8F6F-46B7A7EDC393}
+		{84067B5C-833B-426D-987C-F713C550E435} = {26EF6005-ADBA-4962-8D6C-7437F9B9C031}
+		{0C735905-7615-4137-BEB4-A474569EF2EB} = {12802144-8214-446D-9E4F-5AD0C9254A3F}
+		{09589ED0-1B70-42D7-8BD6-27AA4AF56654} = {12802144-8214-446D-9E4F-5AD0C9254A3F}
+		{0D8C3D4D-D0A9-4CD6-A97A-1E4D11198D0C} = {26EF6005-ADBA-4962-8D6C-7437F9B9C031}
+		{BDC8D3C3-1EAA-4416-BE9A-A9384916BD5E} = {12802144-8214-446D-9E4F-5AD0C9254A3F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4E57D29-5703-40ED-91A9-D8C41631F67B}
+	EndGlobalSection
+EndGlobal
