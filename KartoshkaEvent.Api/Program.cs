@@ -8,6 +8,8 @@ using KartoshkaEvent.DataAccess;
 using KartoshkaEvent.MailService;
 using KartoshkaEvent.YooKassaPayment;
 using Microsoft.AspNetCore.Authentication;
+using System.Diagnostics;
+using System.Reflection;
 
 internal class Program
 {
@@ -73,7 +75,7 @@ internal class Program
                 opt.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
                 opt.RoutePrefix = string.Empty;
             });
-        }
+        } 
 
         using (var scope = app.Services.CreateScope())
         {
@@ -86,5 +88,7 @@ internal class Program
         app.MapControllers();
 
         app.Run();
+
+
     }
 }

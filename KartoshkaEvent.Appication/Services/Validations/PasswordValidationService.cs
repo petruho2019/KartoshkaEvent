@@ -14,8 +14,6 @@ namespace KartoshkaEvent.Application.Services.Validations
 
         public async Task<Result<User>> ValidatePasswordsAsync(ChangePasswordCommand command, User userFromDb, CancellationToken ct)
         {
-            if (!BCrypt.Net.BCrypt.Verify(command.OldPassword, userFromDb!.Password))
-                return Result<User>.BadRequest("Incorrect old password");
             if (BCrypt.Net.BCrypt.Verify(command.NewPassword, userFromDb.Password))
                 return Result<User>.BadRequest("New password and password from db match");
 

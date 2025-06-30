@@ -1,5 +1,4 @@
-﻿using KartoshkaEvent.Application.Contracts.Interfaces;
-using KartoshkaEvent.Domain.Models;
+﻿using KartoshkaEvent.Domain.Models;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 
@@ -18,6 +17,8 @@ namespace KartoshkaEvent.Application.Services
                     ? id
                     : Guid.Empty;
             }
+
+            
         }
         public string Email 
         { get
